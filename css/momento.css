@@ -22,6 +22,9 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
+}
+
+nav div {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -48,9 +51,9 @@ nav a:hover {
 
 /* Conteúdo principal */
 main {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 2rem auto;
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
 
 .img-tema {
@@ -58,13 +61,13 @@ main {
     margin: 2rem auto;
     max-width: 100%;
     height: auto;
-    border-radius: 12px;
+    border-radius: 16px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .hero {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     padding: 2rem;
     background-color: #fff;
     border-radius: 8px;
@@ -79,6 +82,8 @@ main {
 
 .hero p {
     font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
     color: #555;
 }
 
@@ -92,38 +97,62 @@ main {
     max-width: 800px;
 }
 
-/* Seções */
-section {
+/* Estrutura com container e cards */
+.container {
+    display: grid;
+    gap: 2rem;
     margin-bottom: 3rem;
 }
 
-h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #2c3e50;
-    border-bottom: 2px solid #e67e22;
-    padding-bottom: 0.5rem;
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-p, li {
+.card h2 {
+    color: #2c3e50;
     margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e67e22;
+    font-size: 1.8rem;
+}
+
+.card h3 {
+    margin: 1rem 0 0.5rem;
+    color: #e67e22;
+    font-size: 1.2rem;
+}
+
+.card ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.card li {
+    margin-bottom: 0.5rem;
     color: #444;
 }
 
-ul {
-    margin-left: 1.5rem;
-    list-style: disc;
+/* Citações */
+blockquote {
+    font-style: italic;
+    color: #555;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    border-left: 3px solid #e74c3c;
 }
 
 /* Rodapé */
-
 footer {
     background-color: #2c3e50;
     color: #ecf0f1;
     text-align: center;
     padding: 2rem;
     margin-top: 3rem;
-} 
+}
 
 footer p {
     margin-bottom: 0.5rem;
