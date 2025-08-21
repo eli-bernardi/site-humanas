@@ -82,16 +82,15 @@ main {
 }
 
 .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-bottom: 3rem;
 }
 
 .card {
     background-color: #fff;
-    border-radius: 8px;
+    border-radius: 12px;
     padding: 1.5rem;
+    
   
 }
 
